@@ -18,7 +18,7 @@ body {
     height: 100vh; /* Optional: Make the container take full height */
 }
 .quizheading{
-    font-size: large;
+    font-size: 80px;
     font-weight: 600;
 }
 .question {
