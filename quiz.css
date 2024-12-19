@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+.container {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    background-color: #eeee;
+    border-width: 20px;
+    border: solid;
+    border-radius: 8px;
+    max-width: fit-content;
+    padding: 30px;
+    margin: auto; /* Center the container itself */
+    height: 100vh; /* Optional: Make the container take full height */
+}
+.quizheading{
+    font-size: large;
+    font-weight: 600;
+}
+.question {
+    margin-bottom: 20px;
+}
+.result {
+    font-weight: bold;
+}
+.button-container {
+display: flex; /* Use flexbox */
+gap: 10px; /* Space between buttons */
+justify-content: center; /* Center the buttons horizontally */
+}
+
+button {
+padding: 10px 20px; /* Add some padding for better appearance */
+font-size: 16px; /* Adjust font size */
+border: none; /* Remove default border */
+border-radius: 5px; /* Add border radius */
+cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Specific styles for each button */
+#submit-btn {
+background-color: #4CAF50; /* Green background */
+color: white; /* White text */
+}
+
+#reset-btn {
+background-color: #f44336; /* Red background */
+color: white; /* White text */
+}
+
+/* Optional: Add hover effects */
+button:hover {
+opacity: 0.9; /* Slightly fade on hover */
+}

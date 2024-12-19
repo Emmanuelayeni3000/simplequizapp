@@ -1,5 +1,6 @@
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
+const resetButton = document.getElementById('reset-btn');
 const resultContainer = document.getElementById('result');
 
 const quizQuestions = [
@@ -53,5 +54,14 @@ submitButton.addEventListener('click', () => {
     resultContainer.textContent = `You scored ${score} out of ${quizQuestions.length}`;
 });
 
+resetButton.addEventListener('click', () => {
+    // Clear all selected answers
+    const radios = document.querySelectorAll('input[type="radio"]');
+    radios.forEach(radio => {
+        radio.checked = false;
+    });
+    resultContainer.textContent = ''; // Clear the result display
+});
 // Load the quiz when the page loads
 loadQuiz();
+
